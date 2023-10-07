@@ -1,0 +1,73 @@
+{
+  "name": "next-await",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "keywords": [
+    "await",
+    "nextjs",
+    "suspense",
+    "use",
+    "reactjs",
+    "RSC"
+  ],
+  "author": {
+    "name": "Raj Rathore"
+  },
+  "description": "Await Component for RSC and Client Component, Use Suspense without creating a new component.",
+  "license": "MIT",
+  "tsup": {
+    "entry": [
+      "src/Await.tsx",
+      "src/ClientAwait.tsx"
+    ],
+    "splitting": false,
+    "minify": true,
+    "sourcemap": true,
+    "clean": true,
+    "dts": true,
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./server": {
+      "import": "./dist/Await.js",
+      "require": "./dist/Await.cjs",
+      "types": "./dist/Await.d.ts",
+      "default": "./dist/Await.js"
+    },
+    "./client": {
+      "import": "./dist/ClientAwait.js",
+      "require": "./dist/ClientAwait.cjs",
+      "types": "./dist/ClientAwait.d.ts",
+      "default": "./dist/ClientAwait.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/raj7096/next-await/issues"
+  },
+  "homepage": "https://github.com/raj7096/next-await",
+  "peerDependencies": {
+    "react": "next"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.25",
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "server-only": "^0.0.1"
+  }
+}
