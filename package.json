@@ -1,6 +1,6 @@
 {
   "name": "next-await",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "private": false,
   "type": "module",
   "keywords": [
@@ -23,13 +23,9 @@
     ],
     "splitting": false,
     "minify": true,
-    "sourcemap": true,
     "clean": true,
     "dts": true,
-    "format": [
-      "cjs",
-      "esm"
-    ]
+    "format": "esm"
   },
   "scripts": {
     "build": "tsup"
@@ -40,15 +36,11 @@
   "exports": {
     "./server": {
       "import": "./dist/Await.js",
-      "require": "./dist/Await.cjs",
-      "types": "./dist/Await.d.ts",
-      "default": "./dist/Await.js"
+      "types": "./dist/Await.d.ts"
     },
     "./client": {
       "import": "./dist/ClientAwait.js",
-      "require": "./dist/ClientAwait.cjs",
-      "types": "./dist/ClientAwait.d.ts",
-      "default": "./dist/ClientAwait.js"
+      "types": "./dist/ClientAwait.d.ts"
     }
   },
   "publishConfig": {
@@ -57,13 +49,12 @@
   "bugs": {
     "url": "https://github.com/raj7096/next-await/issues"
   },
-  "homepage": "https://github.com/raj7096/next-await",
+  "homepage": "https://github.com/raj7096/next-await#readme",
   "peerDependencies": {
     "react": "next"
   },
   "devDependencies": {
     "@types/react": "18.2.25",
-    "rimraf": "^5.0.5",
     "tsup": "^7.2.0",
     "typescript": "^5"
   },

@@ -1,6 +1,6 @@
-# 🚀 next-await
+# next-await 🚀
 
-`next-await` is a lightweight and intuitive npm package that simplifies handling slow data requests in your Next.js applications. It provides components `<Await>` and `<ClientAwait>` to help you use Suspense without creating a new component.
+🛠 `next-await` is a lightweight and intuitive npm package that simplifies handling slow data requests in your Next.js applications. It provides components `<Await>` and `<ClientAwait>` to help you use Suspense without creating a new component.
 
 ## Summary
 
@@ -92,5 +92,8 @@ We welcome contributions! Feel free to open issues or submit pull requests for a
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) for details.
 
 ## Acknowledgments 🙌
+
+[Await Component Blog](https://buildui.com/recipes/await-component?ck_subscriber_id=2160413802&utm_source=convertkit&utm_medium=email&utm_campaign=%E2%9A%9B%EF%B8%8F+This+Week+In+React+%23160%3A+Remix%2C+Next.js%2C+Expo+API+Routes%2C+Ladle%2C+MDXEditor%2C+Sonner%2C+Docusaurus%2C+AbortController%2C+Query+String%2C+Menubar%2C+VisionCamera%2C+Victory+Native+XL%2C+Bun%2C+ESLint%2C+TC39...%20-%2011844219)
+ by [Build UI](https://buildui.com/)
 
 [Inspired by Remix's Await component](https://remix.run/docs/en/main/components/await)
